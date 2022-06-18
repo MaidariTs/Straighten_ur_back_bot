@@ -7,6 +7,9 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, Updater
 
 from telegram import ReplyKeyboardMarkup
 
+from dotenv import load_dotenv
+
+load_dotenv()
 secret_token = os.getenv('TOKEN')
 updater = Updater(token=secret_token)
 
@@ -41,7 +44,7 @@ def straighten_ur_back_random(update, context):
         'Выпрямись',
         'Выпрями свою спину',
         'Да выпрями свою спину наконец!',
-        'Выпрямить спину на англисйком будет "Straighten your back"',
+        '"Выпрями спину" на англисйком будет "Straighten your back"',
         'Straighten ur back',
         'В Ы П Р Я М И С П И Н У'
     ]
