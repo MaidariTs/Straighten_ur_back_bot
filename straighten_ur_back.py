@@ -142,8 +142,8 @@ updater.dispatcher.add_handler(
     CommandHandler(
         'time_setting', straighten_ur_back_timer))
 updater.dispatcher.add_handler(CommandHandler('1', one))
-updater.dispatcher.add_handler(CommandHandler('1', two))
-updater.dispatcher.add_handler(CommandHandler('1', three))
+updater.dispatcher.add_handler(CommandHandler('2', two))
+updater.dispatcher.add_handler(CommandHandler('3', three))
 updater.dispatcher.add_handler(
     MessageHandler(Filters.text, straighten_ur_back_random))
 
